@@ -1,855 +1,820 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domaine Saint-François – Résidence 4★ à Saint-François (Guadeloupe)</title>
-    <meta name="description" content="Bungalows & appartements avec piscines, jardin tropical et petit-déjeuner au bord de l'eau. À 5 min des lagons de Saint-François. Réservez en direct.">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body {
-            box-sizing: border-box;
-            font-family: 'Raleway', sans-serif;
-        }
-        
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(30px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes slideIn {
-            from { opacity: 0; transform: translateX(-20px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        
-        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out; }
-        .animate-slideIn { animation: slideIn 0.6s ease-out; }
-        .animate-pulse-custom { animation: pulse 2s infinite; }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #0c1e1a 0%, #0a2e2a 25%, #0d2818 50%, #1a1a2e 75%, #16213e 100%);
-        }
-        
-        .glass-effect {
-            backdrop-filter: blur(15px);
-            background: rgba(15, 30, 25, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-        }
-        
-        .tropical-shadow {
-            box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
-        }
-        
-        .section-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
-        .section-hidden {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.8s ease-out;
-        }
-    </style>
-</head>
-<body class="gradient-bg font-sans">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/logo%20domaine.png" alt="Logo Domaine Saint-François" class="h-12 w-12 md:h-16 md:w-16 object-cover" style="transform: translateX(50%) translateY(33%);" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                </div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#accueil" class="text-white hover:text-cyan-200 transition-colors">Accueil</a>
-                    <a href="#presentation" class="text-white hover:text-cyan-200 transition-colors">Le Domaine</a>
-                    <a href="#logements" class="text-white hover:text-cyan-200 transition-colors">Logements</a>
-                    <a href="#galerie" class="text-white hover:text-cyan-200 transition-colors">Galerie</a>
-                    <a href="#avis" class="text-white hover:text-cyan-200 transition-colors">Avis</a>
-                    <a href="#aide" class="text-white hover:text-cyan-200 transition-colors">Aide</a>
-                    <a href="#infos" class="text-white hover:text-cyan-200 transition-colors">Infos</a>
-                    <a href="#faq" class="text-white hover:text-cyan-200 transition-colors">FAQ</a>
-                </div>
-                <button id="mobile-menu-btn" class="md:hidden text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <!-- Menu mobile -->
-        <div id="mobile-menu" class="hidden md:hidden glass-effect border-b border-white/20">
-            <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#accueil" class="block px-3 py-2 text-white hover:text-cyan-200">Accueil</a>
-                <a href="#presentation" class="block px-3 py-2 text-white hover:text-cyan-200">Le Domaine</a>
-                <a href="#logements" class="block px-3 py-2 text-white hover:text-cyan-200">Logements</a>
-                <a href="#galerie" class="block px-3 py-2 text-white hover:text-cyan-200">Galerie</a>
-                <a href="#avis" class="block px-3 py-2 text-white hover:text-cyan-200">Avis</a>
-                <a href="#aide" class="block px-3 py-2 text-white hover:text-cyan-200">Aide</a>
-                <a href="#infos" class="block px-3 py-2 text-white hover:text-cyan-200">Infos</a>
-                <a href="#faq" class="block px-3 py-2 text-white hover:text-cyan-200">FAQ</a>
-            </div>
-        </div>
-    </nav>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <main>
+  <title>Domaine Saint-François – Résidence 4★ à Saint-François (Guadeloupe)</title>
+  <meta name="description" content="Bungalows & appartements avec piscines, jardin tropical et petit-déjeuner au bord de l'eau. À 5 min des lagons de Saint-François. Réservez en direct.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://laurentdf971.github.io/domaine-saint-francois-site/">
+
+  <!-- Social / Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="Domaine Saint-François">
+  <meta property="og:title" content="Domaine Saint-François – Résidence 4★ en Guadeloupe">
+  <meta property="og:description" content="Bungalows & appartements, piscines, jardin tropical et petit-déjeuner au bord de l'eau.">
+  <meta property="og:url" content="https://laurentdf971.github.io/domaine-saint-francois-site/">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Domaine Saint-François – Résidence 4★ en Guadeloupe">
+  <meta name="twitter:description" content="Séjour tropical avec piscines, jardin et petit-déjeuner.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png">
+  <meta name="theme-color" content="#0a2e2a">
+
+  <!-- Preload LCP image (hero) -->
+  <link rel="preload" as="image" href="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png" imagesrcset="
+    https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png 1600w" imagesizes="100vw" fetchpriority="high">
+
+  <!-- Performance hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+  <link rel="preconnect" href="https://app.mews.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="dns-prefetch" href="//cdn.tailwindcss.com">
+  <link rel="dns-prefetch" href="//raw.githubusercontent.com">
+  <link rel="dns-prefetch" href="//app.mews.com">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura:wght@400&family=Raleway:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { box-sizing: border-box; font-family: 'Raleway', sans-serif; }
+    @keyframes fadeInUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes slideIn { from {opacity:0; transform:translateX(-20px);} to {opacity:1; transform:translateX(0);} }
+    @keyframes pulse { 0%,100% {transform:scale(1);} 50% {transform:scale(1.05);} }
+    .animate-fadeInUp { animation: fadeInUp .8s ease-out; }
+    .animate-slideIn { animation: slideIn .6s ease-out; }
+    .animate-pulse-custom { animation: pulse 2s infinite; }
+    .gradient-bg { background: linear-gradient(135deg, #0c1e1a 0%, #0a2e2a 25%, #0d2818 50%, #1a1a2e 75%, #16213e 100%); }
+    .glass-effect { backdrop-filter: blur(15px); background: rgba(15,30,25,.85); border: 1px solid rgba(255,255,255,.2); box-shadow: 0 8px 32px rgba(0,0,0,.4); }
+    .tropical-shadow { box-shadow: 0 20px 40px rgba(14,165,233,.15); }
+    .section-visible { opacity:1; transform:translateY(0); }
+    .section-hidden { opacity:0; transform:translateY(50px); transition: all .8s ease-out; }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+    /* Visually hidden but focusable (skip link) */
+    .sr-only-focusable:not(:focus):not(:active) {
+      position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; border:0!important;
+    }
+  </style>
+
+  <!-- Structured data (JSON-LD). Si vous rééditez dans Canva et que cela gêne, vous pouvez supprimer ces 2 blocs. -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Hotel",
+    "name":"Domaine Saint-François",
+    "url":"https://laurentdf971.github.io/domaine-saint-francois-site/",
+    "image":"https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png",
+    "telephone":"+590690300433",
+    "priceRange":"€€",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Chemin de la Princesse Desbonnes",
+      "addressLocality":"Saint-François",
+      "postalCode":"97118",
+      "addressRegion":"Guadeloupe",
+      "addressCountry":"GP"
+    },
+    "amenityFeature":[
+      {"@type":"LocationFeatureSpecification","name":"Piscines extérieures","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Wi-Fi gratuit","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Parking gratuit","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Bar-tapas","value":true},
+      {"@type":"LocationFeatureSpecification","name":"Espace massage","value":true}
+    ],
+    "checkinTime":"16:00",
+    "checkoutTime":"10:00",
+    "geo":{"@type":"GeoCoordinates","latitude":16.252,"longitude":-61.266},
+    "sameAs":[
+      "https://www.instagram.com/terres_des_iles/",
+      "https://www.facebook.com/pages/category/Product-Service/Terres-des-iles-destination-Guadeloupe-."
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Quels sont les horaires d'arrivée et de départ ?","acceptedAnswer":{"@type":"Answer","text":"Arrivée de 16h à 21h, départ avant 10h. Bagagerie possible sur demande."}},
+      {"@type":"Question","name":"Le petit-déjeuner est-il inclus dans les tarifs ?","acceptedAnswer":{"@type":"Answer","text":"Oui, tous les séjours comprennent le petit-déjeuner au bord de la piscine de 7h à 9h."}},
+      {"@type":"Question","name":"Y a-t-il un service de navette depuis l'aéroport ?","acceptedAnswer":{"@type":"Answer","text":"Navette aéroport disponible sur réservation. Contactez-nous pour les tarifs."}},
+      {"@type":"Question","name":"Y a-t-il un parking ?","acceptedAnswer":{"@type":"Answer","text":"Parking privatif gratuit au sein du Domaine, site clos et sécurisé."}},
+      {"@type":"Question","name":"Le linge de lit et les serviettes sont-ils fournis ?","acceptedAnswer":{"@type":"Answer","text":"Linge de lit et serviettes fournis. Changement toutes les 5 nuits, échange à la demande possible."}},
+      {"@type":"Question","name":"Peut-on cuisiner dans les logements ?","acceptedAnswer":{"@type":"Answer","text":"Chaque logement possède une kitchenette. Les résidences ont en plus un four et un lave-vaisselle."}},
+      {"@type":"Question","name":"Proposez-vous des repas le soir ?","acceptedAnswer":{"@type":"Answer","text":"Un bar-tapas convivial ouvre à partir du 11 octobre 2025 (horaires variables selon saison)."}},
+      {"@type":"Question","name":"Quelle est votre politique d'annulation ?","acceptedAnswer":{"@type":"Answer","text":"Selon le tarif choisi lors de la réservation. Détails précisés au moment de réserver."}},
+      {"@type":"Question","name":"Les animaux de compagnie sont-ils acceptés ?","acceptedAnswer":{"@type":"Answer","text":"Non, afin d’assurer le confort et la tranquillité de tous nos résidents."}},
+      {"@type":"Question","name":"Voyage avec bébé","acceptedAnswer":{"@type":"Answer","text":"Prévenez-nous à la réservation : lit bébé et chaise haute peuvent être installés."}},
+      {"@type":"Question","name":"Y a-t-il un service de réception ?","acceptedAnswer":{"@type":"Answer","text":"Réception pour conseils, réservations d’excursions, etc. Contact WhatsApp/téléphone : +590 690 300 433."}},
+      {"@type":"Question","name":"Activités et excursions","acceptedAnswer":{"@type":"Answer","text":"Organisation possible : plongée, catamaran, randonnées, visites culturelles…"}},
+      {"@type":"Question","name":"Massages et soins esthétiques","acceptedAnswer":{"@type":"Answer","text":"Espace massage dans le jardin tropical. Réservez votre soin pour un moment détente."}}
+    ]
+  }
+  </script>
+</head>
+
+<body class="gradient-bg font-sans">
+  <!-- lien d'évitement -->
+  <a href="#contenu" class="sr-only-focusable m-2 inline-block bg-white text-black px-3 py-2 rounded">Aller au contenu principal</a>
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 glass-effect border-b border-white/20" role="navigation" aria-label="Navigation principale">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex items-center">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/logo%20domaine.png"
+               alt="Logo Domaine Saint-François"
+               class="h-12 w-12 md:h-16 md:w-16 object-cover"
+               loading="eager" decoding="async">
+        </div>
+        <div class="hidden md:flex space-x-8">
+          <a href="#accueil" class="text-white hover:text-cyan-200 transition-colors">Accueil</a>
+          <a href="#presentation" class="text-white hover:text-cyan-200 transition-colors">Le Domaine</a>
+          <a href="#logements" class="text-white hover:text-cyan-200 transition-colors">Logements</a>
+          <a href="#galerie" class="text-white hover:text-cyan-200 transition-colors">Galerie</a>
+          <a href="#avis" class="text-white hover:text-cyan-200 transition-colors">Avis</a>
+          <a href="#aide" class="text-white hover:text-cyan-200 transition-colors">Aide</a>
+          <a href="#infos" class="text-white hover:text-cyan-200 transition-colors">Infos</a>
+          <a href="#faq" class="text-white hover:text-cyan-200 transition-colors">FAQ</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-white" aria-label="Ouvrir le menu" aria-controls="mobile-menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Menu mobile -->
+    <div id="mobile-menu" class="hidden md:hidden glass-effect border-b border-white/20" role="menu">
+      <div class="px-2 pt-2 pb-3 space-y-1">
+        <a href="#accueil" class="block px-3 py-2 text-white hover:text-cyan-200">Accueil</a>
+        <a href="#presentation" class="block px-3 py-2 text-white hover:text-cyan-200">Le Domaine</a>
+        <a href="#logements" class="block px-3 py-2 text-white hover:text-cyan-200">Logements</a>
+        <a href="#galerie" class="block px-3 py-2 text-white hover:text-cyan-200">Galerie</a>
+        <a href="#avis" class="block px-3 py-2 text-white hover:text-cyan-200">Avis</a>
+        <a href="#aide" class="block px-3 py-2 text-white hover:text-cyan-200">Aide</a>
+        <a href="#infos" class="block px-3 py-2 text-white hover:text-cyan-200">Infos</a>
+        <a href="#faq" class="block px-3 py-2 text-white hover:text-cyan-200">FAQ</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contenu">
     <!-- Hero Section -->
     <section id="accueil" class="h-screen flex items-center justify-center relative overflow-hidden">
-        <!-- Image de fond -->
-        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png" alt="Domaine Saint-François - Vue panoramique du domaine avec piscines et bungalows en bois" class="absolute inset-0 w-full h-full object-cover object-top" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-        
-        <!-- Overlay sombre -->
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        
-        <div class="text-center text-white z-20 px-4 max-w-4xl mx-auto mt-32">
-            <h1 class="text-4xl md:text-7xl font-bold mb-6 animate-fadeInUp drop-shadow-2xl" style="font-family: 'Cormorant Garamond', serif;">
-                Domaine Saint-François
-            </h1>
-            <p class="text-3xl md:text-5xl mb-12 animate-fadeInUp opacity-90 drop-shadow-lg" style="font-family: 'Allura', cursive;">
-                La douceur des Antilles
-            </p>
-            <div class="flex justify-center animate-fadeInUp">
-                <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f" target="_blank" rel="noopener noreferrer" class="bg-transparent border-2 border-white text-white px-12 py-5 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-all transform hover:scale-105 animate-pulse-custom text-xl inline-block">
-                    Réserver maintenant
-                </a>
-            </div>
+      <!-- Image de fond -->
+      <img
+        src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/banniere%20rincipale%20domaine%20saint-franc%CC%A7ois.png"
+        alt="Domaine Saint-François - Vue panoramique du domaine avec piscines et bungalows en bois"
+        class="absolute inset-0 w-full h-full object-cover object-top"
+        fetchpriority="high" decoding="async">
+      <!-- Overlay sombre -->
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <div class="text-center text-white z-20 px-4 max-w-4xl mx-auto mt-32">
+        <h1 class="text-4xl md:text-7xl font-bold mb-6 animate-fadeInUp drop-shadow-2xl" style="font-family:'Cormorant Garamond',serif;">
+          Domaine Saint-François
+        </h1>
+        <p class="text-3xl md:text-5xl mb-12 animate-fadeInUp opacity-90 drop-shadow-lg" style="font-family:'Allura',cursive;">
+          La douceur des Antilles
+        </p>
+        <div class="flex justify-center animate-fadeInUp">
+          <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f?utm_source=site&utm_medium=cta&utm_campaign=booking_direct"
+             target="_blank" rel="noopener noreferrer"
+             class="bg-transparent border-2 border-white text-white px-12 py-5 rounded-full font-semibold hover:bg-white hover:text-emerald-700 transition-all transform hover:scale-105 animate-pulse-custom text-xl inline-block">
+            Réserver maintenant
+          </a>
         </div>
+      </div>
     </section>
 
-    <!-- Présentation Section -->
+    <!-- Présentation -->
     <section id="presentation" class="py-12 md:py-16 bg-white/90 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Texte -->
-                <div class="space-y-8">
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6" style="font-family: 'Cormorant Garamond', serif;">
-                            Ici tout commence
-                        </h2>
-                        <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mb-8"></div>
-                    </div>
-                    
-                    <div class="space-y-6 text-gray-700 leading-relaxed">
-                        <p class="text-lg">
-                            <strong class="text-emerald-700">Résidence de tourisme 4 étoiles</strong>, nichée dans la nature à Saint-François en Guadeloupe. Point de départ idéal pour partir à la découverte des îles de Guadeloupe.
-                        </p>
-                        
-                        <p class="text-lg">
-                            Au cœur d'un vaste écrin de verdure, <span class="text-emerald-600 font-medium">15 variétés de palmiers, bananiers, cocotiers, papayers, avocatiers et maracujas</span> vous attendent.
-                        </p>
-                        
-                        <p class="text-lg">
-                            À <strong>5 minutes des plus beaux lagons de Guadeloupe</strong>, venez profiter de la douceur de vivre des Antilles et de ses eaux cristallines...
-                        </p>
-                        
-                        <div class="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-2xl border-l-4 border-emerald-500">
-                            <p class="text-lg font-medium text-gray-800 mb-2">
-                                Le Domaine de 6000 m² est composé de <span class="text-emerald-700">11 logements et 3 piscines, ainsi qu'un espace massage et un bar-tapas</span>.
-                            </p>
-                            <p class="text-gray-700">
-                                Le service de qualité, agréable et convivial, avec plus d'espace, plus d'équipements dans votre logement. <strong>L'endroit idéal pour des vacances réussies !</strong>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <!-- Statistiques -->
-                    <div class="grid grid-cols-5 gap-4 pt-8">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-emerald-600" style="font-family: 'Cormorant Garamond', serif;">3</div>
-                            <div class="text-sm text-gray-600 uppercase tracking-wide">piscines</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-teal-600" style="font-family: 'Cormorant Garamond', serif;">11</div>
-                            <div class="text-sm text-gray-600 uppercase tracking-wide">logements</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-600">🧘‍♀️</div>
-                            <div class="text-sm text-gray-600 uppercase tracking-wide">espace massage</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600">🍹</div>
-                            <div class="text-sm text-gray-600 uppercase tracking-wide">bar-tapas</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-amber-600">✓</div>
-                            <div class="text-sm text-gray-600 uppercase tracking-wide">petit-déjeuner</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Image principale -->
-                <div class="relative">
-                    <div class="relative rounded-3xl overflow-hidden tropical-shadow">
-                        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20aerienne%20piscine.png" alt="Domaine Saint-François - Vue aérienne spectaculaire de la piscine entourée de végétation tropicale" class="w-full h-[400px] object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    </div>
-                </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-8">
+            <div>
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6" style="font-family:'Cormorant Garamond',serif;">Ici tout commence</h2>
+              <div class="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mb-8"></div>
             </div>
+            <div class="space-y-6 text-gray-700 leading-relaxed">
+              <p class="text-lg"><strong class="text-emerald-700">Résidence de tourisme 4 étoiles</strong>, nichée dans la nature à Saint-François en Guadeloupe. Point de départ idéal pour partir à la découverte des îles de Guadeloupe.</p>
+              <p class="text-lg">Au cœur d'un vaste écrin de verdure, <span class="text-emerald-600 font-medium">15 variétés de palmiers, bananiers, cocotiers, papayers, avocatiers et maracujas</span> vous attendent.</p>
+              <p class="text-lg">À <strong>5 minutes des plus beaux lagons de Guadeloupe</strong>, venez profiter de la douceur de vivre des Antilles et de ses eaux cristallines...</p>
+              <div class="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-2xl border-l-4 border-emerald-500">
+                <p class="text-lg font-medium text-gray-800 mb-2">Le Domaine de 6000 m² est composé de <span class="text-emerald-700">11 logements et 3 piscines, ainsi qu'un espace massage et un bar-tapas</span>.</p>
+                <p class="text-gray-700">Le service de qualité, agréable et convivial, avec plus d'espace, plus d'équipements dans votre logement. <strong>L'endroit idéal pour des vacances réussies !</strong></p>
+              </div>
+            </div>
+            <div class="grid grid-cols-5 gap-4 pt-8">
+              <div class="text-center"><div class="text-3xl font-bold text-emerald-600" style="font-family:'Cormorant Garamond',serif;">3</div><div class="text-sm text-gray-600 uppercase tracking-wide">piscines</div></div>
+              <div class="text-center"><div class="text-3xl font-bold text-teal-600" style="font-family:'Cormorant Garamond',serif;">11</div><div class="text-sm text-gray-600 uppercase tracking-wide">logements</div></div>
+              <div class="text-center"><div class="text-3xl font-bold text-purple-600" aria-hidden="true">🧘‍♀️</div><div class="text-sm text-gray-600 uppercase tracking-wide">espace massage</div></div>
+              <div class="text-center"><div class="text-3xl font-bold text-orange-600" aria-hidden="true">🍹</div><div class="text-sm text-gray-600 uppercase tracking-wide">bar-tapas</div></div>
+              <div class="text-center"><div class="text-3xl font-bold text-amber-600" aria-hidden="true">✓</div><div class="text-sm text-gray-600 uppercase tracking-wide">petit-déjeuner</div></div>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="relative rounded-3xl overflow-hidden tropical-shadow">
+              <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20aerienne%20piscine.png"
+                   alt="Domaine Saint-François - Vue aérienne spectaculaire de la piscine entourée de végétation tropicale"
+                   class="w-full h-[400px] object-cover"
+                   loading="lazy" decoding="async">
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Logements Section -->
+    <!-- Logements -->
     <section id="logements" class="py-12 md:py-16 bg-white/85 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">Votre expérience de séjour</h2>
-                <p class="text-xl text-gray-600">Trouvez le logement qui vous ressemble</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Lodge Cocoon -->
-                <div class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20lodge%20cocoon.png" alt="Lodge Cocoon - Bungalow cosy avec terrasse privée" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-amber-600 mb-3" style="font-family: 'Cormorant Garamond', serif;">Lodge Cocoon</h3>
-                        <p class="text-gray-600 mb-4">Lodge chaleureux avec vue sur jardin tropical. Parfait pour un séjour relaxant.</p>
-                        <ul class="text-sm text-gray-500 mb-6 space-y-2">
-                            <li>✓ 45m² • 4 personnes</li>
-                            <li>✓ Lit double + canapé convertible</li>
-                            <li>✓ Climatisation • WiFi • Kitchenette</li>
-                            <li>✓ Salle de bain • Douche extérieure privée</li>
-                            <li>✓ Terrasse avec vue sur jardin tropical</li>
-                        </ul>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-bold text-amber-600">à partir de 140€/nuit</span>
-                            <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f" target="_blank" rel="noopener noreferrer" class="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors inline-block text-center">
-                                Réserver
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Lodge Confort+ -->
-                <div class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20lodge%20confort.png" alt="Lodge Confort+ - Bungalow familial spacieux avec salon séparé" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-emerald-600 mb-3" style="font-family: 'Cormorant Garamond', serif;">Lodge Confort+</h3>
-                        <p class="text-gray-600 mb-4">Lodge spacieux en bois avec salon séparé, parfait en famille.</p>
-                        <ul class="text-sm text-gray-500 mb-6 space-y-2">
-                            <li>✓ 60m² • 4 personnes</li>
-                            <li>✓ Chambre principale + chambre avec lits superposés</li>
-                            <li>✓ Salon séparé • Kitchenette • WIFI • Climatisation</li>
-                            <li>✓ Salle de bain • Douche extérieure privée</li>
-                            <li>✓ Terrasse avec vue sur jardin tropical</li>
-                        </ul>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-bold text-emerald-600">à partir de 151€/nuit</span>
-                            <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors inline-block text-center">
-                                Réserver
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Résidence Tropicale -->
-                <div class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
-                    <div class="h-64 relative overflow-hidden">
-                        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20re%CC%81sidence.png" alt="Résidence Tropicale - Villa spacieuse avec terrasse ombragée" class="w-full h-full object-cover" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-teal-600 mb-3" style="font-family: 'Cormorant Garamond', serif;">Résidence Tropicale</h3>
-                        <p class="text-gray-600 mb-4">Résidence spacieuse sans vis-à-vis, idéale pour les familles ou entre amis.</p>
-                        <ul class="text-sm text-gray-500 mb-6 space-y-2">
-                            <li>✓ 90m² • 6 personnes</li>
-                            <li>✓ Chambre principale + chambre avec lits simples/doubles + canapé convertible</li>
-                            <li>✓ Salon séparé • cuisine • WIFI • Climatisation</li>
-                            <li>✓ Salle de bain • Douche</li>
-                            <li>✓ Terrasse ombragée</li>
-                        </ul>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm font-bold text-teal-600">à partir de 175€/nuit</span>
-                            <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f" target="_blank" rel="noopener noreferrer" class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors inline-block text-center">
-                                Réserver
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family:'Cormorant Garamond',serif;">Votre expérience de séjour</h2>
+          <p class="text-xl text-gray-600">Trouvez le logement qui vous ressemble</p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Lodge Cocoon -->
+          <article class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <div class="h-64 relative overflow-hidden">
+              <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20lodge%20cocoon.png"
+                   alt="Lodge Cocoon - Bungalow cosy avec terrasse privée"
+                   class="w-full h-full object-cover"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-amber-600 mb-3" style="font-family:'Cormorant Garamond',serif;">Lodge Cocoon</h3>
+              <p class="text-gray-600 mb-4">Lodge chaleureux avec vue sur jardin tropical. Parfait pour un séjour relaxant.</p>
+              <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                <li>✓ 45m² • 4 personnes</li><li>✓ Lit double + canapé convertible</li><li>✓ Climatisation • WiFi • Kitchenette</li><li>✓ Salle de bain • Douche extérieure privée</li><li>✓ Terrasse avec vue sur jardin tropical</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold text-amber-600">à partir de 140€/nuit</span>
+                <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f?utm_source=site&utm_medium=cta&utm_campaign=booking_direct"
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-amber-600 text-white px-6 py-2 rounded-full hover:bg-amber-700 transition-colors inline-block text-center">Réserver</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Lodge Confort+ -->
+          <article class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <div class="h-64 relative overflow-hidden">
+              <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20lodge%20confort.png"
+                   alt="Lodge Confort+ - Bungalow familial spacieux avec salon séparé"
+                   class="w-full h-full object-cover"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-emerald-600 mb-3" style="font-family:'Cormorant Garamond',serif;">Lodge Confort+</h3>
+              <p class="text-gray-600 mb-4">Lodge spacieux en bois avec salon séparé, parfait en famille.</p>
+              <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                <li>✓ 60m² • 4 personnes</li><li>✓ Chambre principale + chambre avec lits superposés</li><li>✓ Salon séparé • Kitchenette • WIFI • Climatisation</li><li>✓ Salle de bain • Douche extérieure privée</li><li>✓ Terrasse avec vue sur jardin tropical</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold text-emerald-600">à partir de 151€/nuit</span>
+                <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f?utm_source=site&utm_medium=cta&utm_campaign=booking_direct"
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-emerald-600 text-white px-6 py-2 rounded-full hover:bg-emerald-700 transition-colors inline-block text-center">Réserver</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Résidence Tropicale -->
+          <article class="bg-white rounded-2xl tropical-shadow overflow-hidden transform hover:scale-105 transition-all duration-300">
+            <div class="h-64 relative overflow-hidden">
+              <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/chambre%20re%CC%81sidence.png"
+                   alt="Résidence Tropicale - Villa spacieuse avec terrasse ombragée"
+                   class="w-full h-full object-cover"
+                   loading="lazy" decoding="async">
+            </div>
+            <div class="p-6">
+              <h3 class="text-2xl font-bold text-teal-600 mb-3" style="font-family:'Cormorant Garamond',serif;">Résidence Tropicale</h3>
+              <p class="text-gray-600 mb-4">Résidence spacieuse sans vis-à-vis, idéale pour les familles ou entre amis.</p>
+              <ul class="text-sm text-gray-500 mb-6 space-y-2">
+                <li>✓ 90m² • 6 personnes</li><li>✓ Chambre principale + chambre avec lits simples/doubles + canapé convertible</li><li>✓ Salon séparé • cuisine • WIFI • Climatisation</li><li>✓ Salle de bain • Douche</li><li>✓ Terrasse ombragée</li>
+              </ul>
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-bold text-teal-600">à partir de 175€/nuit</span>
+                <a href="https://app.mews.com/distributor/ed19b1c7-5278-4dc5-b4ff-ab7400db006f?utm_source=site&utm_medium=cta&utm_campaign=booking_direct"
+                   target="_blank" rel="noopener noreferrer"
+                   class="bg-teal-600 text-white px-6 py-2 rounded-full hover:bg-teal-700 transition-colors inline-block text-center">Réserver</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Galerie Section -->
+    <!-- Galerie -->
     <section id="galerie" class="py-12 md:py-16 bg-white/85 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">Galerie Photos</h2>
-                <p class="text-xl text-gray-600">Un avant goût de vos vacances...</p>
-            </div>
-            
-            <!-- Galerie principale -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div class="col-span-2 row-span-2">
-                    <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20jardin.png" alt="Vue magnifique du jardin tropical du Domaine Saint-François avec sa végétation luxuriante" class="w-full h-80 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                </div>
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20piscine.png" alt="Vue magnifique de la piscine du Domaine Saint-François avec transats et végétation tropicale" class="h-36 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20alle%CC%81es.png" alt="Allées pittoresques du Domaine Saint-François bordées de végétation luxuriante" class="h-36 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/terrasse.png" alt="Terrasse accueillante du Domaine Saint-François avec mobilier de jardin tropical" class="h-36 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/pas%20japonais.png" alt="Pas japonais pittoresques du Domaine Saint-François dans le jardin tropical" class="h-36 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            </div>
-            
-            <!-- Galerie étendue -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20accueil.png" alt="Vue accueillante de l'entrée du Domaine Saint-François avec sa végétation luxuriante" class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/de%CC%81tente%20apero%20re%CC%81sidence%20tropicale.png" alt="Moment détente apéro à la résidence tropicale du Domaine Saint-François" class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/87b553f7ae698791ad316cc278d3446e504980d2/espace%20massage.png" alt="Espace massage relaxant du Domaine Saint-François pour votre bien-être" class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family:'Cormorant Garamond',serif;">Galerie Photos</h2>
+          <p class="text-xl text-gray-600">Un avant goût de vos vacances...</p>
         </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+          <div class="col-span-2 row-span-2">
+            <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20jardin.png"
+                 alt="Vue du jardin tropical du Domaine Saint-François"
+                 class="w-full h-80 object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform"
+                 loading="lazy" decoding="async">
+          </div>
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20piscine.png"
+               alt="Piscine entourée de végétation tropicale"
+               class="h-36 w-full object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20alle%CC%81es.png"
+               alt="Allées du Domaine Saint-François bordées de végétation"
+               class="h-36 w-full object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/terrasse.png"
+               alt="Terrasse au mobilier de jardin tropical"
+               class="h-36 w-full object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/pas%20japonais.png"
+               alt="Pas japonais dans le jardin"
+               class="h-36 w-full object-cover rounded-2xl cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mb-8">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/vue%20accueil.png"
+               alt="Entrée du Domaine"
+               class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/0d8de1a40feac143597aeda44f2044a8b7d9759a/de%CC%81tente%20apero%20re%CC%81sidence%20tropicale.png"
+               alt="Moment détente apéro à la résidence tropicale"
+               class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/87b553f7ae698791ad316cc278d3446e504980d2/espace%20massage.png"
+               alt="Espace massage dans le jardin tropical"
+               class="rounded-2xl h-48 w-full object-cover cursor-pointer hover:scale-105 transition-transform"
+               loading="lazy" decoding="async">
+        </div>
+      </div>
     </section>
 
-    <!-- Avis Clients Section -->
+    <!-- Avis Clients -->
     <section id="avis" class="py-12 md:py-16 bg-white/90 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">Avis Clients</h2>
-                <p class="text-xl text-gray-600">Ce que disent nos invités</p>
-            </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"Très beau domaine constitué de plusieurs bungalows espacés les uns des autres le tout dans un bel écrin de verdure luxuriant. Les bungalows sont spacieux et bien équipés - la douche extérieure privée est très agréable. Le personnel est disponible et très agréable, ça a été un plaisir d'être reçu par nos hôtes. Le petit-déj' est succulent, fait de produits frais avec du choix."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            L
-                        </div>
-                        <div>
-                            <p class="font-semibold">Louis B.</p>
-                            <p class="text-sm text-gray-500">Belgique</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"Cadre très agréable. Très bon accueil. Le personnel est aux petits soins. Bien situé. Petit déjeuner sucré, salé ou vitaminé, varié avec fruits frais et au bord de la piscine. Cueillette de fruits dans le domaine (avocats, bananes, goyaves, acérolas ..) Les petits plus, le local transit pour laisser ses bagages à la journée si besoin, la possibilité de commander des plats locaux ou plateaux créoles. Un très bon séjour."</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            E
-                        </div>
-                        <div>
-                            <p class="font-semibold">Elise</p>
-                            <p class="text-sm text-gray-500">Poitiers</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
-                    <div class="flex items-center mb-4">
-                        <div class="text-yellow-400 text-xl">⭐⭐⭐⭐⭐</div>
-                    </div>
-                    <p class="text-gray-600 mb-6 italic">"Nous avons passé un séjour exceptionnel au Domaine St François. Le bungalow était parfait, offrant tout le confort nécessaire. Le cadre est magnifique dans un très beau jardin avec une piscine qui invite à la détente. Le petit déjeuner était délicieux et varié. L'équipe sur place est formidable, toujours prête à aider et à donner d'excellentes recommandations pour les excursions. Nous recommandons et reviendrons sans hésiter !"</p>
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-4">
-                            M
-                        </div>
-                        <div>
-                            <p class="font-semibold">Mary</p>
-                            <p class="text-sm text-gray-500">Paris</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family:'Cormorant Garamond',serif;">Avis Clients</h2>
+          <p class="text-xl text-gray-600">Ce que disent nos invités</p>
         </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
+            <div class="flex items-center mb-4"><div class="text-yellow-400 text-xl" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div></div>
+            <p class="text-gray-600 mb-6 italic">"Très beau domaine constitué de plusieurs bungalows espacés les uns des autres le tout dans un bel écrin de verdure luxuriant..."</p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold mr-4">L</div>
+              <div><p class="font-semibold">Louis B.</p><p class="text-sm text-gray-500">Belgique</p></div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
+            <div class="flex items-center mb-4"><div class="text-yellow-400 text-xl" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div></div>
+            <p class="text-gray-600 mb-6 italic">"Cadre très agréable. Très bon accueil. Le personnel est aux petits soins..."</p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center text-white font-bold mr-4">E</div>
+              <div><p class="font-semibold">Elise</p><p class="text-sm text-gray-500">Poitiers</p></div>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-2xl tropical-shadow">
+            <div class="flex items-center mb-4"><div class="text-yellow-400 text-xl" aria-label="5 étoiles">⭐⭐⭐⭐⭐</div></div>
+            <p class="text-gray-600 mb-6 italic">"Nous avons passé un séjour exceptionnel au Domaine St François..."</p>
+            <div class="flex items-center">
+              <div class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold mr-4">M</div>
+              <div><p class="font-semibold">Mary</p><p class="text-sm text-gray-500">Paris</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Section Besoin d'aide -->
+    <!-- Aide -->
     <section id="aide" class="py-16 bg-white/85 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">Besoin d'aide pour organiser votre séjour ?</h2>
-                <p class="text-lg text-gray-600">Notre équipe est là pour vous accompagner</p>
-            </div>
-            
-            <!-- Deux sections principales -->
-            <div class="grid md:grid-cols-2 gap-6 mb-8">
-                <!-- Guide voyage -->
-                <div class="bg-white p-6 rounded-2xl tropical-shadow text-center">
-                    <div class="text-5xl mb-4">🗺️</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Guide voyage Guadeloupe</h3>
-                    <p class="text-gray-600 mb-4">Activités incontournables, meilleures périodes, plages secrètes... Découvrez notre mini-guide complet !</p>
-                    <a href="https://ledomainesaintfrancois.com/conseilsvoyages" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition-colors">
-                        Consulter le guide
-                    </a>
-                </div>
-
-                <!-- Contact -->
-                <div class="bg-white p-6 rounded-2xl tropical-shadow text-center">
-                    <div class="text-5xl mb-4">💬</div>
-                    <h3 class="text-xl font-bold text-gray-800 mb-3">Contactez-nous</h3>
-                    <p class="text-gray-600 mb-4">Questions sur votre réservation, demandes spéciales... Nous sommes à votre écoute !</p>
-                    <a href="mailto:info@domainesaintfrancois.com?subject=Question%20reservation%20Domaine%20Saint-Francois" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition-colors">
-                        Nous écrire
-                    </a>
-                </div>
-            </div>
-
-            <!-- Bande contact -->
-            <div class="bg-white p-4 rounded-2xl tropical-shadow">
-                <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-center">
-                    <div class="flex items-center gap-2">
-                        <span class="text-xl">📞</span>
-                        <div>
-                            <p class="font-semibold text-gray-800">+590 690 300 433</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xl">💬</span>
-                        <div>
-                            <p class="font-semibold text-gray-800">WhatsApp disponible</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <span class="text-xl">⏰</span>
-                        <div>
-                            <p class="font-semibold text-gray-800">Réponse sous 24h</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4" style="font-family:'Cormorant Garamond',serif;">Besoin d'aide pour organiser votre séjour ?</h2>
+          <p class="text-lg text-gray-600">Notre équipe est là pour vous accompagner</p>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-white p-6 rounded-2xl tropical-shadow text-center">
+            <div class="text-5xl mb-4" aria-hidden="true">🗺️</div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Guide voyage Guadeloupe</h3>
+            <p class="text-gray-600 mb-4">Activités incontournables, meilleures périodes, plages secrètes... Découvrez notre mini-guide complet !</p>
+            <a href="https://ledomainesaintfrancois.com/conseilsvoyages" target="_blank" rel="noopener noreferrer" class="inline-block bg-emerald-600 text-white px-5 py-2 rounded-full hover:bg-emerald-700 transition-colors">Consulter le guide</a>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl tropical-shadow text-center">
+            <div class="text-5xl mb-4" aria-hidden="true">💬</div>
+            <h3 class="text-xl font-bold text-gray-800 mb-3">Contactez-nous</h3>
+            <p class="text-gray-600 mb-4">Questions sur votre réservation, demandes spéciales... Nous sommes à votre écoute !</p>
+            <a href="mailto:info@domainesaintfrancois.com?subject=Question%20reservation%20Domaine%20Saint-Francois" class="inline-block bg-teal-600 text-white px-5 py-2 rounded-full hover:bg-teal-700 transition-colors">Nous écrire</a>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl tropical-shadow">
+          <div class="flex flex-col md:flex-row justify-center items-center gap-6 text-center">
+            <div class="flex items-center gap-2"><span class="text-xl" aria-hidden="true">📞</span><p class="font-semibold text-gray-800"><a href="tel:+590690300433" class="hover:underline">+590 690 300 433</a></p></div>
+            <div class="flex items-center gap-2"><span class="text-xl" aria-hidden="true">💬</span><p class="font-semibold text-gray-800">WhatsApp disponible</p></div>
+            <div class="flex items-center gap-2"><span class="text-xl" aria-hidden="true">⏰</span><p class="font-semibold text-gray-800">Réponse sous 24h</p></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Infos Pratiques Section -->
+    <!-- Infos pratiques -->
     <section id="infos" class="py-12 md:py-16 bg-white/85 backdrop-blur-sm section-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family: 'Cormorant Garamond', serif;">Informations Pratiques</h2>
-                <p class="text-xl text-gray-600">Tout ce qu'il faut savoir pour votre séjour</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Localisation -->
-                <div class="bg-white p-8 rounded-2xl tropical-shadow">
-                    <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
-                        📍 Localisation & Accès
-                    </h3>
-                    <div class="space-y-4 mb-8">
-                        <p><strong>Adresse :</strong><br>Chemin de la Princesse Desbonnes<br>97118 Saint-François, Guadeloupe</p>
-                        <p><strong>Aéroport :</strong> 45 minutes en voiture</p>
-                        <p><strong>Plages :</strong> 5 minutes en voiture</p>
-                    </div>
-                    
-                    <!-- Carte de localisation -->
-                    <div class="w-full h-48 rounded-xl overflow-hidden tropical-shadow">
-                        <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/bd9b34a7d4836bde64ea13ca6601f6328a2f4519/carte.png" alt="Carte de localisation du Domaine Saint-François en Guadeloupe" class="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    </div>
-                </div>
-
-                <!-- Services -->
-                <div class="bg-white p-8 rounded-2xl tropical-shadow">
-                    <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-8 flex items-center">
-                        🏨 <span class="whitespace-nowrap">Services &</span> <span class="whitespace-nowrap">Équipements</span>
-                    </h3>
-                    <div class="grid grid-cols-2 gap-6 text-sm">
-                        <div class="space-y-4">
-                            <p>✓ WiFi gratuit</p>
-                            <p>✓ Piscines extérieures</p>
-                            <p>✓ Restaurant sur place</p>
-                            <p>✓ Espace massage</p>
-                            <p>✓ Petit-déjeuner inclus</p>
-                        </div>
-                        <div class="space-y-4">
-                            <p>✓ Parking gratuit</p>
-                            <p>✓ Conciergerie</p>
-                            <p>✓ Navette aéroport</p>
-                            <p>✓ Excursions</p>
-                            <p>✓ Check-out tardif</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4" style="font-family:'Cormorant Garamond',serif;">Informations Pratiques</h2>
+          <p class="text-xl text-gray-600">Tout ce qu'il faut savoir pour votre séjour</p>
         </div>
+
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Localisation -->
+          <div class="bg-white p-8 rounded-2xl tropical-shadow">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">📍 Localisation & Accès</h3>
+            <div class="space-y-4 mb-8">
+              <p><strong>Adresse :</strong><br>Chemin de la Princesse Desbonnes<br>97118 Saint-François, Guadeloupe</p>
+              <p><strong>Aéroport :</strong> 45 minutes en voiture</p>
+              <p><strong>Plages :</strong> 5 minutes en voiture</p>
+            </div>
+            <div class="w-full h-48 rounded-xl overflow-hidden tropical-shadow">
+              <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/bd9b34a7d4836bde64ea13ca6601f6328a2f4519/carte.png"
+                   alt="Carte de localisation du Domaine Saint-François en Guadeloupe"
+                   class="w-full h-full object-cover"
+                   loading="lazy" decoding="async">
+            </div>
+          </div>
+
+          <!-- Services -->
+          <div class="bg-white p-8 rounded-2xl tropical-shadow">
+            <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-8 flex items-center">🏨 <span class="whitespace-nowrap">Services &</span> <span class="whitespace-nowrap">Équipements</span></h3>
+            <div class="grid grid-cols-2 gap-6 text-sm">
+              <div class="space-y-4">
+                <p>✓ WiFi gratuit</p><p>✓ Piscines extérieures</p><p>✓ Restaurant sur place</p><p>✓ Espace massage</p><p>✓ Petit-déjeuner inclus</p>
+              </div>
+              <div class="space-y-4">
+                <p>✓ Parking gratuit</p><p>✓ Conciergerie</p><p>✓ Navette aéroport</p><p>✓ Excursions</p><p>✓ Check-out tardif</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- FAQ -->
     <section id="faq" class="py-12 md:py-20 bg-white/90 backdrop-blur-sm section-hidden">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8 md:mb-16">
-                <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-2 md:mb-4" style="font-family: 'Cormorant Garamond', serif; letter-spacing: 0.02em;">Questions Fréquentes</h2>
-                <p class="text-lg md:text-xl text-gray-600">Trouvez rapidement les réponses à vos questions</p>
-            </div>
-
-            <div class="space-y-2 md:space-y-4">
-                <!-- Q1 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Quels sont les horaires d'arrivée et de départ ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">L'arrivée se fait à partir de 16h00 jusqu'à 21h00 et le départ avant 10h00. Nous proposons un service de bagagerie gratuit si vous arrivez plus tard uniquement.</p>
-                    </div>
-                </div>
-
-                <!-- Q2 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Le petit-déjeuner est-il inclus dans les tarifs ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base"><strong class="text-emerald-700">Tous nos séjours comprennent le petit-déjeuner en bord de piscine</strong>, servi entre <strong>7h et 9h</strong>.</p>
-                        <p class="mt-2 text-sm md:text-base">Il est composé de produits locaux, de viennoiseries, de fruits de saison, idéal pour démarrer votre journée dans un cadre tropical exceptionnel !</p>
-                    </div>
-                </div>
-
-                <!-- Q3 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un service de navette depuis l'aéroport ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Oui, nous proposons un service de navette aéroport sur demande. Les tarifs peuvent varier, n'hésitez pas à contacter l'équipe du Domaine pour plus d'informations.</p>
-                    </div>
-                </div>
-
-                <!-- Q4 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un parking ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Le Domaine vous accueille dans un lieu totalement sécurisé et clos et nous disposons d'un <strong>parking privatif gratuit</strong> pour tous les résidents du Domaine.</p>
-                    </div>
-                </div>
-
-                <!-- Q5 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Le linge de lit et les serviettes sont-ils fournis ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Bien sûr, le linge de lit et les serviettes sont fournis et changés tous les 5 jours lors de votre séjour. Les serviettes peuvent également être changées sur demande.</p>
-                        <p class="mt-2 text-sm md:text-base">Nous proposons également un service de location de serviettes de plage sur demande à réserver sur notre site ou directement au Domaine.</p>
-                    </div>
-                </div>
-
-                <!-- Q6 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Peut-on cuisiner dans les logements ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base"><strong>Chaque logement est équipé d'une petite cuisine</strong> vous permettant d'être autonome au niveau des repas.</p>
-                        <p class="mt-2 text-sm md:text-base">Les <strong>résidences disposent en plus d'un four et d'un lave-vaisselle</strong>. Un <strong>espace barbecue convivial</strong> est également à votre disposition pour des moments de partage en plein air !</p>
-                    </div>
-                </div>
-
-                <!-- Q7 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des repas le soir ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">À partir du <strong>11 octobre 2025</strong>, nous ouvrons le <strong>"Banana Bar"</strong>, un bar-tapas convivial. Vous pourrez déguster cocktails, tapas, plats et desserts.</p>
-                        <p class="mt-2 text-sm md:text-base">Les horaires d'ouverture varient en fonction de la saison. N'hésitez pas à nous contacter pour plus d'informations !</p>
-                    </div>
-                </div>
-
-                <!-- Q8 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Quelle est votre politique d'annulation ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base"><strong>La politique d'annulation dépend de la formule tarifaire choisie</strong> lors de votre réservation.</p>
-                        <p class="mt-2 text-sm md:text-base">Les conditions d'annulation vous seront précisées au moment de la réservation selon le tarif sélectionné. N'hésitez pas à nous contacter pour plus de détails sur les conditions spécifiques à votre séjour.</p>
-                    </div>
-                </div>
-
-                <!-- Q9 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Les animaux de compagnie sont-ils acceptés ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Nous sommes désolés, mais <strong>les animaux de compagnie ne sont pas acceptés</strong> au Domaine Saint-François pour garantir le confort et la tranquillité de tous nos résidents.</p>
-                    </div>
-                </div>
-
-                <!-- Q10 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Bébé nous accompagne...</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Merci de nous en informer lors de votre réservation. Nous installerons un lit bébé ainsi qu'une chaise haute à votre logement.</p>
-                    </div>
-                </div>
-
-                <!-- Q11 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un service de réception ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">En tant que Résidence de tourisme, nous disposons d'une réception vous permettant de réserver vos excursions, demander un conseil, un renseignement, demander une Ice Box, etc...</p>
-                        <p class="mt-2 text-sm md:text-base"><strong>Contactez-nous au +590 690 300 433</strong> (téléphone ou WhatsApp)</p>
-                    </div>
-                </div>
-
-                <!-- Q12 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des activités et excursions ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Oui ! Notre équipe peut organiser : plongée sous-marine, excursions en catamaran, randonnées, visites culturelles, et bien plus encore.</p>
-                    </div>
-                </div>
-
-                <!-- Q13 -->
-                <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
-                    <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
-                        <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des massages et des soins esthétiques ?</span>
-                        <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
-                    </button>
-                    <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
-                        <p class="text-sm md:text-base">Afin de rendre votre séjour encore plus agréable, nous avons aménagé un <strong>espace massage dans notre jardin tropical</strong>. N'hésitez pas à réserver un soin dans le cadre luxuriant du Domaine...</p>
-                        <p class="mt-2 text-sm md:text-base"><strong>Nos services :</strong> Massage, soins du corps, des mains, des pieds, afin de profiter encore plus de vos moments détente dans un environnement naturel exceptionnel !</p>
-                    </div>
-                </div>
-            </div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-8 md:mb-16">
+          <h2 class="text-3xl md:text-5xl font-bold text-gray-800 mb-2 md:mb-4" style="font-family:'Cormorant Garamond',serif; letter-spacing:.02em;">Questions Fréquentes</h2>
+          <p class="text-lg md:text-xl text-gray-600">Trouvez rapidement les réponses à vos questions</p>
         </div>
+
+        <div class="space-y-2 md:space-y-4">
+          <!-- Répétition des items (identiques au tien) -->
+          <!-- Q1 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Quels sont les horaires d'arrivée et de départ ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">L'arrivée se fait à partir de 16h00 jusqu'à 21h00 et le départ avant 10h00. Nous proposons un service de bagagerie gratuit si vous arrivez plus tard uniquement.</p>
+            </div>
+          </div>
+          <!-- Q2 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Le petit-déjeuner est-il inclus dans les tarifs ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base"><strong class="text-emerald-700">Tous nos séjours comprennent le petit-déjeuner en bord de piscine</strong>, servi entre <strong>7h et 9h</strong>.</p>
+              <p class="mt-2 text-sm md:text-base">Il est composé de produits locaux, de viennoiseries, de fruits de saison, idéal pour démarrer votre journée dans un cadre tropical exceptionnel !</p>
+            </div>
+          </div>
+          <!-- Q3 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un service de navette depuis l'aéroport ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Oui, nous proposons un service de navette aéroport sur demande. Les tarifs peuvent varier, n'hésitez pas à contacter l'équipe du Domaine pour plus d'informations.</p>
+            </div>
+          </div>
+          <!-- Q4 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un parking ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Le Domaine vous accueille dans un lieu totalement sécurisé et clos et nous disposons d'un <strong>parking privatif gratuit</strong> pour tous les résidents du Domaine.</p>
+            </div>
+          </div>
+          <!-- Q5 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Le linge de lit et les serviettes sont-ils fournis ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Bien sûr, le linge de lit et les serviettes sont fournis et changés tous les 5 jours lors de votre séjour. Les serviettes peuvent également être changées sur demande.</p>
+              <p class="mt-2 text-sm md:text-base">Nous proposons également un service de location de serviettes de plage sur demande à réserver sur notre site ou directement au Domaine.</p>
+            </div>
+          </div>
+          <!-- Q6 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Peut-on cuisiner dans les logements ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base"><strong>Chaque logement est équipé d'une petite cuisine</strong> vous permettant d'être autonome au niveau des repas.</p>
+              <p class="mt-2 text-sm md:text-base">Les <strong>résidences disposent en plus d'un four et d'un lave-vaisselle</strong>. Un <strong>espace barbecue convivial</strong> est également à votre disposition pour des moments de partage en plein air !</p>
+            </div>
+          </div>
+          <!-- Q7 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des repas le soir ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">À partir du <strong>11 octobre 2025</strong>, nous ouvrons le <strong>"Banana Bar"</strong>, un bar-tapas convivial. Vous pourrez déguster cocktails, tapas, plats et desserts.</p>
+              <p class="mt-2 text-sm md:text-base">Les horaires d'ouverture varient en fonction de la saison. N'hésitez pas à nous contacter pour plus d'informations !</p>
+            </div>
+          </div>
+          <!-- Q8 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Quelle est votre politique d'annulation ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base"><strong>La politique d'annulation dépend de la formule tarifaire choisie</strong> lors de votre réservation.</p>
+              <p class="mt-2 text-sm md:text-base">Les conditions d'annulation vous seront précisées au moment de la réservation selon le tarif sélectionné. N'hésitez pas à nous contacter pour plus de détails.</p>
+            </div>
+          </div>
+          <!-- Q9 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Les animaux de compagnie sont-ils acceptés ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Nous sommes désolés, mais <strong>les animaux de compagnie ne sont pas acceptés</strong> au Domaine Saint-François pour garantir le confort et la tranquillité de tous nos résidents.</p>
+            </div>
+          </div>
+          <!-- Q10 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Bébé nous accompagne...</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Merci de nous en informer lors de votre réservation. Nous installerons un lit bébé ainsi qu'une chaise haute à votre logement.</p>
+            </div>
+          </div>
+          <!-- Q11 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Y a-t-il un service de réception ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">En tant que Résidence de tourisme, nous disposons d'une réception pour réserver vos excursions, demander un conseil, un renseignement, etc.</p>
+              <p class="mt-2 text-sm md:text-base"><strong>Contact :</strong> +590 690 300 433 (téléphone ou WhatsApp)</p>
+            </div>
+          </div>
+          <!-- Q12 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des activités et excursions ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Oui ! Notre équipe peut organiser : plongée sous-marine, excursions en catamaran, randonnées, visites culturelles, et bien plus encore.</p>
+            </div>
+          </div>
+          <!-- Q13 -->
+          <div class="faq-item bg-gray-50 rounded-xl md:rounded-2xl overflow-hidden tropical-shadow">
+            <button class="faq-question w-full text-left p-4 md:p-6 hover:bg-gray-100 transition-colors flex justify-between items-center">
+              <span class="text-sm md:text-base font-semibold text-gray-800 pr-2">Proposez-vous des massages et des soins esthétiques ?</span>
+              <span class="faq-icon text-xl md:text-2xl text-cyan-600 transform transition-transform flex-shrink-0">+</span>
+            </button>
+            <div class="faq-answer hidden p-4 md:p-6 pt-0 text-gray-600">
+              <p class="text-sm md:text-base">Afin de rendre votre séjour encore plus agréable, nous avons aménagé un <strong>espace massage dans notre jardin tropical</strong>. Réservez un soin et profitez d’un cadre luxuriant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    </main>
+  </main>
 
-    <!-- Footer -->
-    <footer class="gradient-bg text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                <div class="md:text-left">
-                    <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/logo%20domaine.png" alt="Logo Domaine Saint-François" class="h-12 md:h-16 w-12 md:w-16 object-contain mx-auto md:mx-0 mb-3 md:mb-4" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <p class="opacity-90">Votre parenthèse tropicale en Guadeloupe</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
-                    <p class="opacity-90 mb-1">📞 +590 690 300 433</p>
-                    <p class="opacity-90">✉️ info@domainesaintfrancois.com</p>
-                </div>
-                <div class="md:text-right">
-                    <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
-                    <div class="flex justify-center md:justify-end space-x-4">
-                        <a href="https://www.facebook.com/pages/category/Product-Service/Terres-des-iles-destination-Guadeloupe-." target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition-all duration-300 cursor-pointer group">
-                            <svg class="w-6 h-6 text-white group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 3.667h-3.533v7.98H9.101z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.instagram.com/terres_des_iles/" target="_blank" rel="noopener noreferrer" class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 transition-all duration-300 cursor-pointer group">
-                            <svg class="w-6 h-6 text-white group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-white/20 mt-8 pt-8 text-center opacity-75">
-                <p>&copy; 2025 Domaine Saint-François Guadeloupe. Tous droits réservés.</p>
-            </div>
+  <!-- Footer -->
+  <footer class="gradient-bg text-white py-12" role="contentinfo">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="md:text-left">
+          <img src="https://raw.githubusercontent.com/Laurentdf971/domaine-saint-francois-images/72bc418b9b90bef895f98cca631cfb981cb3360e/logo%20domaine.png"
+               alt="Logo Domaine Saint-François"
+               class="h-12 md:h-16 w-12 md:w-16 object-contain mx-auto md:mx-0 mb-3 md:mb-4"
+               loading="lazy" decoding="async">
+          <p class="opacity-90">Votre parenthèse tropicale en Guadeloupe</p>
         </div>
-    </footer>
-
-    <!-- Modal de réservation -->
-    <div id="reservation-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-8 transform scale-95 transition-transform">
-            <div class="text-center mb-6">
-                <h3 class="text-2xl font-bold text-gray-800 mb-2">Réservation</h3>
-                <p class="text-gray-600">Réservez votre lodge au Domaine Saint-François</p>
-            </div>
-            <form id="reservation-form" class="space-y-4">
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Type de logement</label>
-                    <select id="room-type" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                        <option value="">Choisir un logement</option>
-                        <option value="standard">Lodge Cocoon - à partir de 140€/nuit</option>
-                        <option value="deluxe">Lodge Confort+ - à partir de 151€/nuit</option>
-                        <option value="premium">Résidence Tropicale - à partir de 175€/nuit</option>
-                    </select>
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Arrivée</label>
-                        <input type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-2">Départ</label>
-                        <input type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-2">Nombre de personnes</label>
-                    <select class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
-                        <option>1 personne</option>
-                        <option>2 personnes</option>
-                        <option>3 personnes</option>
-                        <option>4 personnes</option>
-                        <option>5 personnes</option>
-                        <option>6 personnes</option>
-                    </select>
-                </div>
-                <div class="flex space-x-4 pt-4">
-                    <button type="button" onclick="closeReservation()" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400 transition-colors">
-                        Annuler
-                    </button>
-                    <button type="submit" class="flex-1 bg-cyan-600 text-white py-3 rounded-lg hover:bg-cyan-700 transition-colors">
-                        Confirmer
-                    </button>
-                </div>
-            </form>
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Contact</h4>
+          <p class="opacity-90 mb-1">📞 <a href="tel:+590690300433" class="hover:underline">+590 690 300 433</a></p>
+          <p class="opacity-90">✉️ <a href="mailto:info@domainesaintfrancois.com" class="hover:underline">info@domainesaintfrancois.com</a></p>
         </div>
+        <div class="md:text-right">
+          <h4 class="text-lg font-semibold mb-4">Suivez-nous</h4>
+          <div class="flex justify-center md:justify-end space-x-4">
+            <a href="https://www.facebook.com/pages/category/Product-Service/Terres-des-iles-destination-Guadeloupe-."
+               target="_blank" rel="noopener noreferrer"
+               class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-blue-600 hover:scale-110 transition-all duration-300 cursor-pointer group" aria-label="Facebook">
+              <svg class="w-6 h-6 text-white group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 3.667h-3.533v7.98H9.101z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/terres_des_iles/" target="_blank" rel="noopener noreferrer"
+               class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center hover:bg-gradient-to-br hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 transition-all duration-300 cursor-pointer group" aria-label="Instagram">
+              <svg class="w-6 h-6 text-white group-hover:text-white transition-colors" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-white/20 mt-8 pt-8 text-center opacity-75">
+        <p>&copy; 2025 Domaine Saint-François Guadeloupe. Tous droits réservés.</p>
+      </div>
     </div>
+  </footer>
 
-    <script>
-        // Navigation mobile
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
-        });
+  <!-- Modal réservation -->
+  <div id="reservation-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center p-4" aria-hidden="true">
+    <div class="bg-white rounded-2xl max-w-md w-full p-8 transform scale-95 transition-transform" role="dialog" aria-modal="true" aria-labelledby="reservation-title">
+      <div class="text-center mb-6">
+        <h3 id="reservation-title" class="text-2xl font-bold text-gray-800 mb-2">Réservation</h3>
+        <p class="text-gray-600">Réservez votre lodge au Domaine Saint-François</p>
+      </div>
+      <form id="reservation-form" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2" for="room-type">Type de logement</label>
+          <select id="room-type" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+            <option value="">Choisir un logement</option>
+            <option value="standard">Lodge Cocoon - à partir de 140€/nuit</option>
+            <option value="deluxe">Lodge Confort+ - à partir de 151€/nuit</option>
+            <option value="premium">Résidence Tropicale - à partir de 175€/nuit</option>
+          </select>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2" for="date-in">Arrivée</label>
+            <input id="date-in" type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-2" for="date-out">Départ</label>
+            <input id="date-out" type="date" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+          </div>
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2" for="guests">Nombre de personnes</label>
+          <select id="guests" class="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent">
+            <option>1 personne</option><option>2 personnes</option><option>3 personnes</option><option>4 personnes</option><option>5 personnes</option><option>6 personnes</option>
+          </select>
+        </div>
+        <div class="flex space-x-4 pt-4">
+          <button type="button" onclick="closeReservation()" class="flex-1 bg-gray-300 text-gray-700 py-3 rounded-lg hover:bg-gray-400 transition-colors">Annuler</button>
+          <button type="submit" class="flex-1 bg-cyan-600 text-white py-3 rounded-lg hover:bg-cyan-700 transition-colors">Confirmer</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-        // Scroll fluide
-        document.querySelectorAll('a[href^="#"]').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                document.getElementById(targetId).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                document.getElementById('mobile-menu').classList.add('hidden');
-            });
-        });
+  <!-- JS -->
+  <script>
+    // Navigation mobile (accessibilité: aria-expanded)
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const isHidden = menu.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+    });
 
-        // Animation des sections au scroll
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.remove('section-hidden');
-                    entry.target.classList.add('section-visible');
-                }
-            });
-        }, { threshold: 0.1 });
+    // Scroll fluide + fermer menu mobile
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const target = document.getElementById(targetId);
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      });
+    });
 
-        document.querySelectorAll('.section-hidden').forEach(section => {
-            observer.observe(section);
-        });
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', function() {
-                const faqItem = this.parentElement;
-                const answer = faqItem.querySelector('.faq-answer');
-                const icon = this.querySelector('.faq-icon');
-                
-                // Toggle current FAQ
-                const isOpen = !answer.classList.contains('hidden');
-                
-                // Close all other FAQs
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    const otherAnswer = item.querySelector('.faq-answer');
-                    const otherIcon = item.querySelector('.faq-icon');
-                    if (item !== faqItem) {
-                        otherAnswer.classList.add('hidden');
-                        otherIcon.textContent = '+';
-                        otherIcon.style.transform = 'rotate(0deg)';
-                    }
-                });
-                
-                // Toggle current FAQ
-                if (isOpen) {
-                    answer.classList.add('hidden');
-                    icon.textContent = '+';
-                    icon.style.transform = 'rotate(0deg)';
-                } else {
-                    answer.classList.remove('hidden');
-                    icon.textContent = '−';
-                    icon.style.transform = 'rotate(180deg)';
-                }
-            });
-        });
-
-        // Modal de réservation
-        function openReservation(roomType = '') {
-            const modal = document.getElementById('reservation-modal');
-            const roomSelect = document.getElementById('room-type');
-            
-            if (roomType) {
-                roomSelect.value = roomType;
-            }
-            
-            modal.classList.remove('hidden');
-            modal.querySelector('.bg-white').classList.remove('scale-95');
-            modal.querySelector('.bg-white').classList.add('scale-100');
+    // Animation sections au scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('section-hidden');
+          entry.target.classList.add('section-visible');
         }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.section-hidden').forEach(section => observer.observe(section));
 
-        function closeReservation() {
-            const modal = document.getElementById('reservation-modal');
-            modal.querySelector('.bg-white').classList.remove('scale-100');
-            modal.querySelector('.bg-white').classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-            }, 200);
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', function () {
+        const faqItem = this.parentElement;
+        const answer = faqItem.querySelector('.faq-answer');
+        const icon = this.querySelector('.faq-icon');
+        const isOpen = !answer.classList.contains('hidden');
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+          if (item !== faqItem) {
+            item.querySelector('.faq-answer').classList.add('hidden');
+            const ic = item.querySelector('.faq-icon');
+            ic.textContent = '+';
+            ic.style.transform = 'rotate(0deg)';
+          }
+        });
+
+        if (isOpen) {
+          answer.classList.add('hidden');
+          icon.textContent = '+';
+          icon.style.transform = 'rotate(0deg)';
+        } else {
+          answer.classList.remove('hidden');
+          icon.textContent = '−';
+          icon.style.transform = 'rotate(180deg)';
         }
+      });
+    });
 
-        // Gestion du formulaire
-        document.getElementById('reservation-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const submitBtn = this.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Envoi en cours...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                alert('Demande de réservation envoyée ! Nous vous contacterons sous 24h.');
-                closeReservation();
-                this.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
+    // Modal réservation
+    function openReservation(roomType = '') {
+      const modal = document.getElementById('reservation-modal');
+      const roomSelect = document.getElementById('room-type');
+      if (roomType) roomSelect.value = roomType;
+      modal.classList.remove('hidden');
+      modal.querySelector('.bg-white').classList.remove('scale-95');
+      modal.querySelector('.bg-white').classList.add('scale-100');
+      modal.setAttribute('aria-hidden', 'false');
+    }
+    function closeReservation() {
+      const modal = document.getElementById('reservation-modal');
+      modal.querySelector('.bg-white').classList.remove('scale-100');
+      modal.querySelector('.bg-white').classList.add('scale-95');
+      setTimeout(() => { modal.classList.add('hidden'); modal.setAttribute('aria-hidden', 'true'); }, 200);
+    }
+    document.getElementById('reservation-modal').addEventListener('click', e => { if (e.target === e.currentTarget) closeReservation(); });
 
-        // Fermer modal en cliquant à l'extérieur
-        document.getElementById('reservation-modal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeReservation();
-            }
-        });
+    // Formulaire réservation (demo)
+    document.getElementById('reservation-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Envoi en cours...';
+      submitBtn.disabled = true;
+      setTimeout(() => {
+        alert('Demande de réservation envoyée ! Nous vous contacterons sous 24h.');
+        closeReservation();
+        this.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 1500);
+    });
 
-        // Dates minimum
-        const today = new Date().toISOString().split('T')[0];
-        document.querySelectorAll('input[type="date"]').forEach(input => {
-            input.min = today;
-        });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98aeed3b564ab74a',t:'MTc1OTg1NjEzMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    // Dates min
+    const today = new Date().toISOString().split('T')[0];
+    document.querySelectorAll('input[type="date"]').forEach(input => input.min = today);
+  </script>
+</body>
 </html>
-
